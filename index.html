@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <h3>Tic Tac Toe</h3>
+        </header>
+        <main>
+            <div class="btnHolder">
+                <button id="playAI">Play Against AI</button>
+                <button id="playHuman">Play Against Human</button>
+            </div>
+            <div class="chooseSide">
+                <form class="choosePlayers" id="addPlayerForm">
+                    <input type="text"
+                        id="playerOneName"
+                        required
+                        placeholder="Player One">
+                    <input type="text"
+                        id="playerTwoName"
+                        required
+                        placeholder="Player Two">
+                    <button id="submitName" type="submit">Submit</button>
+                </form>
+
+                <div class="chooseSideAI">
+                    <button class="side" id="X">X</button>
+                    <button class="side" id="O">O</button>
+                </div>
+            </div>
+            <div class="board" id="board">
+                <div class="grid" id="topLeft"></div>
+                <div class="grid" id="topMiddle"></div>
+                <div class="grid" id="topRight"></div>
+                <div class="grid" id="middleLeft"></div>
+                <div class="grid" id="middleMiddle"></div>
+                <div class="grid" id="middleRight"></div>
+                <div class="grid" id="bottomLeft"></div>
+                <div class="grid" id="bottomMiddle"></div>
+                <div class="grid" id="bottomRight"></div>
+            </div>
+        </main>
+        <div class="cover" id="cover"></div>
+        <div id="overlay" class="overlay">
+            <div id="gameEnding" class="winner"></div>
+        </div>
+    </body>
+</html>
